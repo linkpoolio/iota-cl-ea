@@ -1,0 +1,21 @@
+{
+  "name": "iota-clea",
+  "version": "1.0.0",
+  "description": "IOTA External Adaptor for ChainLink\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "LINK"
+  ],
+  "author": "Jonny Huxtable",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "iota.lib.js": "^0.4.7",
+    "multer": "^1.3.0"
+  }
+}
