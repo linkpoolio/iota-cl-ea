@@ -17,7 +17,7 @@ function throwInvalidRequest(res) {
 
 app.get('/account-data', function(req, res) {
     trytesSeed = iota.utils.toTrytes(req.query.seed);
-    iota.api.getTransactionsObjects(trytesSeed, function(error, response) {
+    iota.api.getAccountData(trytesSeed, function(error, response) {
         if (error) {
             console.error(error);
             throwInvalidRequest(res);
