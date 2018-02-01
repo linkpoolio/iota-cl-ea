@@ -72,5 +72,5 @@ app.get('/', function (req, res) {
 });
 
 var server = app.listen(8081, function () { 
-   console.log("Example app listening at http://%s:%s", server.address().address, server.address().port)
+   console.log("IOTA CL Adaptor started...", server.address().address, server.address().port)
 });
