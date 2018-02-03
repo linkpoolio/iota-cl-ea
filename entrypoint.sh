@@ -12,4 +12,4 @@ echo "{
 }" > node.json
 
 # Run the adaptor
-node server.js
+node index.js
