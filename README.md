@@ -83,10 +83,62 @@ Get account data by given account seed.
  --- | --- 
  seed | Account seed, non-tryte 
 
+### /broadcast-and-store
+**IOTA API Function:** broadcastAndStore
+
+Broadcast and store trytes.
+
+**GET Params:**
+
+ Param | Description 
+ --- | --- 
+ tryes | Comma seperated list of trytes.
+
+### /send-trytes
+**IOTA API Function:** sendTrytes
+
+Attach to trianges, then broadcast and store.
+
+**GET Params:**
+
+ Param | Description 
+ --- | --- 
+ tryes | Comma seperated list of trytes.
+ depth | `int`
+ minWeightMagnitude | `int`
+
 ### /info
 **IOTA API Function:** getNodeInfo
 
 Get the current nodes information.
+
+## Development
+To run the external adaptor, clone the repo and run the following commands:
+```bash
+    npm install
+    node index.js
+```
+You should then see the following:
+
+> IOTA External Adaptor Listening on:  ::8081
+
+To run the unit tests, run the following:
+```bash
+    npm install -g
+    npm test
+```
+
+Which should give the following output:
+```
+  IOTA External Adaptor
+    ✓ responds to /
+    ✓ responds to /account-data (2558ms)
+    ✓ responds to /info (98ms)
+    ✓ responds to /transaction-object (147ms)
+    ✓ responds to /transaction-object-query (191ms)
+    ✓ 404 everything else
+```
+
 
 ## Contributions
 If anyone has any recommendation on what IOTA API calls to support, or wants to contribute and add more themselves, please do!
