@@ -1,0 +1,36 @@
+{
+    "config": {
+        "properties": {
+            "seed": {
+                "description": "Non tryte seed string.",
+                "type": "string"
+            }
+        },
+        "required": [
+            "seed"
+        ],
+        "type": "object"
+    },
+    "input": {
+        "properties": {
+            "_value": {
+                "description": "Input parameters are not used by this adapter.",
+                "type": "string"
+            }
+        },
+        "required": [],
+        "type": "object"
+    },
+    "output": {
+        "properties": {
+            "value": {
+                "description": "The value parsed out of the JSON API.",
+                "type": "string"
+            }
+        },
+        "required": [
+            "value"
+        ],
+        "type": "object"
+    }
+}
