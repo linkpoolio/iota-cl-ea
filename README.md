@@ -10,7 +10,7 @@ This adaptor is published on the public docker hub, so you just need to run the 
 docker pull linkpoolio/iota-cl-ea
 docker run -t -p 8081:8081 -e HOST=<NODE_HOST> -e PORT=<NODE_PORT> linkpoolio/iota-cl-ea
 ```
-To find a IOTA node, use the public directory found [here](https://iotanode.host/)
+To find a IOTA node, use the public directory found [here](https://iota.dance/)
 
 ## Verify Adaptor
 To ensure that the adaptor is working properly, the following call:
